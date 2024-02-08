@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">donnamariebrar_COMP304Sec004_Lab01_Ex02</string>
+
+    <string name="prompt">Choose your City</string>
+
+    <string-array name="cities">
+        <item>Toronto</item>
+        <item>Montreal</item>
+        <item>Vancouver</item>
+        <item>Calgary</item>
+    </string-array>
+
 </resources>
