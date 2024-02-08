@@ -71,7 +71,19 @@ class MainActivity : AppCompatActivity() {
 
             textViewInfo.text = "Your event is registered! \nEvent Name: $name \nEvent Date: $date \nEvent Organizer: $org \nEvent Location: $city \nEvent Type: $typeString \nEvent Format: $format"
             Toast.makeText(this,"Your event is registered! \nEvent Name: $name \nEvent Date: $date \nEvent Organizer: $org \nEvent Location: $city \nEvent Type: $typeString \nEvent Format: $format", Toast.LENGTH_SHORT).show()
+        }
 
+        btnReset.setOnClickListener()
+        {
+            editTextName.setText("")
+            editTextDate.setText("")
+            editTextOrg.setText("")
+            checkBoxCorp.isChecked = false
+            checkBoxNonProf.isChecked = false
+            checkBoxEduc.isChecked = false
+            radioGrpFormat.clearCheck()
+            spinnerCity.setSelection(0)
+            textViewInfo.text = ""
         }
 
     }
