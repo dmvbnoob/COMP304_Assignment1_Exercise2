@@ -8,12 +8,13 @@
     android:orientation="vertical"
     android:paddingVertical="64dp"
     android:paddingHorizontal="24dp"
-    android:background="#F6F1FD">
+    android:background="#F6F1FD"
+    android:scrollbars="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Event Registration App"
         style="@style/TextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,5 +79,86 @@
             android:prompt="@string/prompt"/>
 
     </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxCorp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Corporate"
+            style="@style/CheckTheme"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNonProf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Not-for-Profit"
+            style="@style/CheckTheme"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEduc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Educational"
+            style="@style/CheckTheme"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Event Format:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#12022E"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupFormat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonInPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In-Person"
+                style="@style/CheckTheme"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonOnline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                style="@style/CheckTheme"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
 
 </LinearLayout>
