@@ -94,7 +94,7 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBxCorp"
+                android:id="@+id/checkBoxCorp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Corporate"
@@ -102,7 +102,7 @@
                 android:layout_weight="1" />
 
             <CheckBox
-                android:id="@+id/checkBxNonProf"
+                android:id="@+id/checkBoxNonProf"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Not-for-Profit"
@@ -110,7 +110,7 @@
                 android:layout_weight="1" />
 
             <CheckBox
-                android:id="@+id/checkBxEduc"
+                android:id="@+id/checkBoxEduc"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Educational"
@@ -151,7 +151,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="In-Person"
-                    style="@style/CheckTheme"/>
+                    style="@style/CheckTheme"
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/radioBtnOnline"
@@ -204,7 +205,7 @@
         <TextView
             android:id="@+id/textViewInfo"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="240dp"
             android:padding="16dp"
             android:textSize="20dp"
             android:background="@drawable/textview_background"
