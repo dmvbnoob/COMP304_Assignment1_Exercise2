@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Donnamariebrar_COMP304Sec004_Lab01_Ex02" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Donnamariebrar_COMP304Sec004_Lab01_Ex02" parent="Base.Theme.Donnamariebrar_COMP304Sec004_Lab01_Ex02" />
+</resources>
